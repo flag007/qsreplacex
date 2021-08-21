@@ -32,7 +32,7 @@ func main() {
 		// them into a slice and then sort it.
 		pp := make([]string, 0)
 		//vv := make([]string, 0)
-		for p, v := range u.Query() {
+		for p, _ := range u.Query() {
 			pp = append(pp, p)
 			//vv = append(vv,v[0])
 		}
