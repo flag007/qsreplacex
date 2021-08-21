@@ -43,7 +43,7 @@ func main() {
 	//	fmt.Println(vv)
 		key := fmt.Sprintf("%s%s?%s", u.Hostname(), u.EscapedPath(), strings.Join(pp, "&"))
 
-		fmt.Println(key)
+	//	fmt.Println(key)
 		// Only output each host + path + params combination once
 		if _, exists := seen[key]; exists {
 			continue
