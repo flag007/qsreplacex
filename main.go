@@ -52,10 +52,6 @@ func main() {
 
 		qs := url.Values{}
 
-		fmt.Println(qs)
-		fmt.Println(url.Values{})
-
-
 		for param, vv := range u.Query() {
 			qs.Set(param, vv[0])
 		}
