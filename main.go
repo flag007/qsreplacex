@@ -31,16 +31,16 @@ func main() {
 		// as part of the key to output only unique requests. To do that, put
 		// them into a slice and then sort it.
 		pp := make([]string, 0)
-		vv := make([]string, 0)
+		//vv := make([]string, 0)
 		for p, v := range u.Query() {
 			pp = append(pp, p)
-			vv = append(vv,v[0])
+			//vv = append(vv,v[0])
 		}
 		sort.Strings(pp)
-		sort.Strings(vv)
+		//sort.Strings(vv)
 
-		fmt.Println(pp)
-		fmt.Println(vv)
+	//	fmt.Println(pp)
+	//	fmt.Println(vv)
 		key := fmt.Sprintf("%s%s?%s", u.Hostname(), u.EscapedPath(), strings.Join(pp, "&"))
 
 		fmt.Println(key)
